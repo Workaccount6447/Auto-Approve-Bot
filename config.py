@@ -10,7 +10,7 @@ PICS = (os.environ.get("PICS", "https://filehosting.kustbotsweb.workers.dev/f/ca
 LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1003386051877"))
 NEW_REQ_MODE = os.environ.get("NEW_REQ_MODE", "False").lower() == "true"  # Set "True" For accept new requests
 
-DB_URI = os.environ.get("DB_URI", "mongodb+srv://highlootdeald_db_user:fKYorOH0XNrDopTp@cluster0.wibguo0.mongodb.net/?appName=Cluster0")
+DB_URI = os.environ.get("DB_URI", "")
 DB_NAME = os.environ.get("DB_NAME", "highlootdb")
 
 IS_FSUB = os.environ.get("IS_FSUB", "False").lower() == "true"  # Set "True" For Enable Force Subscribe
