@@ -14,4 +14,4 @@ DB_URI = os.environ.get("DB_URI", "mongodb+srv://highlootdeald_db_user:<db_passw
 DB_NAME = os.environ.get("DB_NAME", "request")
 
 IS_FSUB = os.environ.get("IS_FSUB", "False").lower() == "true"  # Set "True" For Enable Force Subscribe
-AUTH_CHANNELS = list(map(int, os.environ.get("AUTH_CHANNEL", "-1003499488824").split())) # Add Multiple channel ids
+AUTH_CHANNELS = list(map(int, os.environ.get("AUTH_CHANNEL", "").split())) # Add Multiple channel ids
