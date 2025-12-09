@@ -1,17 +1,17 @@
 import os
 from typing import List
 
-API_ID = os.environ.get("API_ID", "")
-API_HASH = os.environ.get("API_HASH", "")
+API_ID = os.environ.get("API_ID", "37891385")
+API_HASH = os.environ.get("API_HASH", "2d14a3ad7a0ea5ec9167fb1623f56fa2")
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
-ADMIN = int(os.environ.get("ADMIN", ""))
-PICS = (os.environ.get("PICS", "")).split()
+ADMIN = int(os.environ.get("ADMIN", "8420494874"))
+PICS = (os.environ.get("PICS", "https://filehosting.kustbotsweb.workers.dev/f/ca44a44d52b04241ae77632b8ec4e484")).split()
 
-LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
+LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1003386051877"))
 NEW_REQ_MODE = os.environ.get("NEW_REQ_MODE", "False").lower() == "true"  # Set "True" For accept new requests
 
-DB_URI = os.environ.get("DB_URI", "")
-DB_NAME = os.environ.get("DB_NAME", "")
+DB_URI = os.environ.get("DB_URI", "mongodb+srv://highlootdeald_db_user:<db_password>@cluster0.wibguo0.mongodb.net/?appName=Cluster0")
+DB_NAME = os.environ.get("DB_NAME", "request")
 
 IS_FSUB = os.environ.get("IS_FSUB", "False").lower() == "true"  # Set "True" For Enable Force Subscribe
-AUTH_CHANNELS = list(map(int, os.environ.get("AUTH_CHANNEL", "-100******** -100*********").split())) # Add Multiple channel ids
+AUTH_CHANNELS = list(map(int, os.environ.get("AUTH_CHANNEL", "-1003499488824").split())) # Add Multiple channel ids
