@@ -10,7 +10,7 @@ PICS = (os.environ.get("PICS", "https://filehosting.kustbotsweb.workers.dev/f/ca
 LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1003386051877"))
 NEW_REQ_MODE = os.environ.get("NEW_REQ_MODE", "true").lower() == "true"  # Set "True" For accept new requests
 
-DB_URI = os.environ.get("DB_URI", "mongodb+srv://dealsduniyalimited_db_user:RwEd6eiGaWdeRVzx@cluster0.pg8j47e.mongodb.net/?appName=Cluste")
+DB_URI = os.environ.get("DB_URI", "mongodb+srv://royalitybots_db_user:948Ptb7Toysx8cd7@cluster0.o2wmbpm.mongodb.net/?appName=Cluster0")
 DB_NAME = os.environ.get("DB_NAME", "RoyalityBots")
 
 IS_FSUB = os.environ.get("IS_FSUB", "False").lower() == "true"  # Set "True" For Enable Force Subscribe
