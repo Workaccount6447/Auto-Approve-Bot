@@ -33,7 +33,7 @@ async def start_cmd(client: Client, message: Message):
         return
 
     bot = await client.get_me()
-    BOT_USERNAME = bot.username
+    BOT_USERNAME = QuickApproverrobot
 
     await message.reply_photo(
         photo=random.choice(PICS),
