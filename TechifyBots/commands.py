@@ -33,7 +33,7 @@ async def start_cmd(client: Client, message: Message):
         return
 
     bot = await client.get_me()
-    BOT_USERNAME = "QuickApproverRobot"
+    BOT_USERNAME = bot.username
 
     await message.reply_photo(
         photo=random.choice(PICS),
@@ -41,18 +41,18 @@ async def start_cmd(client: Client, message: Message):
         reply_markup=InlineKeyboardMarkup([
             [
                 InlineKeyboardButton(
-                    "⇆ 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉 ⇆",
-                    url=f"https://t.me/{BOT_USERNAME}?startgroup=true&admin=invite_users"
+                    '⇆ 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉 ⇆',
+                    url=f"https://t.me/QuickApproverRobot?startgroup=true&admin=invite_users"
                 )
             ],
-              [
+            [
                 InlineKeyboardButton('ℹ️ 𝖠𝖻𝗈𝗎𝗍', callback_data='about'),
                 InlineKeyboardButton('📚 𝖧𝖾𝗅𝗉', callback_data='help')
             ],
             [
                 InlineKeyboardButton(
                     '⇆ 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖢𝗁𝖺𝗇𝗇𝖾𝗅 ⇆',
-                    url=f"https://t.me/{BOT_USERNAME}?startchannel=true&admin=invite_users"
+                    url=f"https://t.me/QuickApproverRobot?startchannel=true&admin=invite_users"
                 )
             ]
         ])
@@ -70,7 +70,7 @@ async def help_cmd(client: Client, message: Message):
             "🎥 𝘛𝘩𝘦 𝘷𝘪𝘥𝘦𝘰 𝘸𝘪𝘭𝘭 𝘤𝘭𝘦𝘢𝘳𝘭𝘺 "
             "𝘦𝘹𝘱𝘭𝘢𝘪𝘯 𝘩𝘰𝘸 𝘵𝘰 𝘶𝘴𝘦 "
             "𝘦𝘢𝘤𝘩 𝘧𝘦𝘢𝘵𝘶𝘳𝘦 𝘸𝘪𝘵𝘩 𝘦𝘢𝘴𝘦.\n\n"
-            "💖 𝘍𝘰𝘳 𝘮𝘰𝘳𝘦 𝘶𝘱𝘥𝘢𝘵𝘦𝘴 — "
+            "💖 𝘍𝘰𝘳 𝘮𝘰𝘳𝘦 𝘶𝘱𝘥𝘢𝘵𝘦𝘴 — @RoyalityBots"
         ),
         reply_markup=InlineKeyboardMarkup([
             [InlineKeyboardButton("🎬 𝘞𝘢𝘵𝘤𝘩 𝘛𝘶𝘵𝘰𝘳𝘪𝘢𝘭", url="https://youtu.be/")]
