@@ -33,7 +33,7 @@ async def start_cmd(client: Client, message: Message):
         return
 
     bot = await client.get_me()
-    BOT_USERNAME = QuickApproverrobot
+    BOT_USERNAME = "QuickApproverRobot"
 
     await message.reply_photo(
         photo=random.choice(PICS),
@@ -41,11 +41,11 @@ async def start_cmd(client: Client, message: Message):
         reply_markup=InlineKeyboardMarkup([
             [
                 InlineKeyboardButton(
-                    '⇆ 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉 ⇆',
+                    "⇆ 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉 ⇆",
                     url=f"https://t.me/{BOT_USERNAME}?startgroup=true&admin=invite_users"
                 )
             ],
-            [
+              [
                 InlineKeyboardButton('ℹ️ 𝖠𝖻𝗈𝗎𝗍', callback_data='about'),
                 InlineKeyboardButton('📚 𝖧𝖾𝗅𝗉', callback_data='help')
             ],
